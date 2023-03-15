@@ -1,0 +1,64 @@
+{
+    "SHOPEE" : {
+        "CATEGORIES" : [
+            {
+                "NAME": "WOMEN_CLOTHES",
+                "API": {
+                    "pop" : {
+                        "VIE" : "https://shopee.vn/api/v4/recommend/recommend?bundle=category",
+                        "THA" : "https://shopee.co.th/api/v4/recommend/recommend?bundle=category",
+                        "MAL" : "https://shopee.com.my/api/v4/recommend/recommend?bundle=category",
+                        "IND" : "https://shopee.co.id/api/v4/recommend/recommend?bundle=category"
+                    },
+                    "sales" : {
+                        "VIE" : "https://shopee.vn/api/v4/search/search_items?by=sales",
+                        "THA" : "https://shopee.co.th/api/v4/search/search_items?by=sales",
+                        "MAL" : "https://shopee.com.my/api/v4/search/search_items?by=sales",
+                        "IND" : "https://shopee.co.id/api/v4/search/search_items?by=sales"
+                    }
+                },
+                "URL" : {
+                    "VIE" : "https://shopee.vn/Women-Clothes-cat.11035639?page={}&sortBy={}",
+                    "THA" : "https://shopee.co.th/Women-Clothes-cat.11044944?page={}&sortBy={}",
+                    "MAL" : "https://shopee.com.my/Women-Clothes-cat.11000538?page={}&sortBy={}",
+                    "IND" : "https://shopee.co.id/Women-Clothes-cat.11042745?page={}&sortBy={}"
+                }
+            }
+        ],
+        "SHOP" : {
+            "BASE" : {
+                "VIE": "https://shopee.vn/api/v4/shop/get_shop_base?entry_point=ShopByPDP&need_cancel_rate=true&request_source=shop_home_page&username={}&version=1",
+                "THA": "https://shopee.co.th/api/v4/shop/get_shop_base?entry_point=ShopByPDP&need_cancel_rate=true&request_source=shop_home_page&username={}&version=1",
+                "MAL": "https://shopee.com.my/api/v4/shop/get_shop_base?entry_point=ShopByPDP&need_cancel_rate=true&request_source=shop_home_page&username={}&version=1",
+                "IND": "https://shopee.co.id/api/v4/shop/get_shop_base?entry_point=ShopByPDP&need_cancel_rate=true&request_source=shop_home_page&username={}&version=1"
+            },
+            "ALL_PRODUCTS": {
+                    "VIE" : "https://shopee.vn/api/v4/shop/search_items?filter_sold_out=2&limit=100&offset={}&shopid={}",
+                    "THA" : "https://shopee.co.th/api/v4/shop/search_items?filter_sold_out=2&limit=100&offset={}&shopid={}",
+                    "MAL" : "https://shopee.com.my/api/v4/shop/search_items?filter_sold_out=2&limit=100&offset={}&shopid={}",
+                    "IND" : "https://shopee.co.id/api/v4/shop/search_items?filter_sold_out=2&limit=100&offset={}&shopid={}"
+            }
+        },
+        "ITEM" : {
+            "URL" : {
+                "VIE" : "https://shopee.vn/product/{}/{}",
+                "THA" : "https://shopee.co.th/product/{}/{}",
+                "MAL" : "https://shopee.com.my/product/{}/{}",
+                "IND" : "https://shopee.co.id/product/{}/{}"
+            },
+            "REVIEWS": {
+                "VIE" : "https://shopee.vn/api/v2/item/get_ratings?filter=0&flag=1&itemid={}&limit=59&offset={}&shopid={}&type=0",
+                "THA" : "https://shopee.co.th/api/v2/item/get_ratings?filter=0&flag=1&itemid={}&limit=59&offset={}&shopid={}&type=0",
+                "MAL" : "https://shopee.com.my/api/v2/item/get_ratings?filter=0&flag=1&itemid={}&limit=59&offset={}&shopid={}&type=0",
+                "IND" : "https://shopee.co.id/api/v2/item/get_ratings?filter=0&flag=1&itemid={}&limit=59&offset={}&shopid={}&type=0"
+            }
+        }
+    },
+    "LAZADA" : {
+        "SHOP" : {
+            "ITEMS" : {
+                "THA" : "https://www.lazada.co.th/{}/?ajax=true&from=wangpu&isFirstRequest=true&langFlag=en&page={}&pageTypeId=2&q=All-Products"
+            }
+        }
+    }
+}
